@@ -5,13 +5,16 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BooksFormController">
+<AnchorPane prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: #0befdc;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BooksFormController">
    <children>
-      <TableView fx:id="tblBooks" layoutX="97.0" layoutY="105.0" prefHeight="476.0" prefWidth="608.0">
+      <TableView fx:id="tblBooks" layoutX="97.0" layoutY="105.0" opacity="0.6" prefHeight="476.0" prefWidth="608.0">
          <columns>
             <TableColumn fx:id="colBookId" text="Book Id" />
             <TableColumn fx:id="colTitle" prefWidth="120.0" text="Title" />
@@ -19,19 +22,36 @@
             <TableColumn fx:id="colGenre" prefWidth="120.0" text="Genre" />
             <TableColumn fx:id="colStatus" prefWidth="120.0" text="Status" />
          </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
       </TableView>
-      <ComboBox layoutX="829.0" layoutY="216.0" prefWidth="150.0" />
-      <Text layoutX="843.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date" wrappingWidth="120.13671875">
+      <ComboBox layoutX="775.0" layoutY="192.0" prefHeight="26.0" prefWidth="224.0">
+         <effect>
+            <InnerShadow />
+         </effect></ComboBox>
+      <Text layoutX="776.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date" wrappingWidth="120.13671875">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
-      <DatePicker layoutX="830.0" layoutY="281.0" prefWidth="150.0" />
-      <Button layoutX="855.0" layoutY="336.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Borrow" textFill="WHITE" />
-      <Text layoutX="844.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Id" wrappingWidth="120.13671875">
+      <DatePicker layoutX="776.0" layoutY="257.0" prefHeight="26.0" prefWidth="224.0">
+         <effect>
+            <InnerShadow />
+         </effect></DatePicker>
+      <Button layoutX="843.0" layoutY="312.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #6df5ea;" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Borrow" textFill="#462222">
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Text layoutX="776.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Id" wrappingWidth="120.13671875">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Text>
+      <ImageView fitHeight="206.0" fitWidth="310.0" layoutX="750.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/360_F_53734293_rs3bkrl9n1EJZBj2CdogkmeF6W5aOhy5-removebg-preview.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
