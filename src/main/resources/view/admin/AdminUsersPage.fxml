@@ -4,24 +4,23 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.admin.AdminUsersFormController">
+<AnchorPane prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: #0befdc;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.admin.AdminUsersFormController">
    <children>
       <Text layoutX="388.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Manage" wrappingWidth="266.93670654296875">
          <font>
             <Font name="System Bold Italic" size="38.0" />
          </font>
       </Text>
-      <Text layoutX="90.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+      <Text layoutX="91.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
          <font>
             <Font name="System Bold" size="20.0" />
          </font></Text>
-      <TextField fx:id="txtUserName" alignment="CENTER" layoutX="89.0" layoutY="162.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
+      <TextField fx:id="txtUserName" alignment="CENTER" layoutX="93.0" layoutY="164.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
       <Text layoutX="92.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
          <font>
             <Font name="System Bold" size="20.0" />
@@ -34,48 +33,22 @@
          </font>
       </Text>
       <TextField fx:id="txtUserPassword" alignment="CENTER" layoutX="91.0" layoutY="305.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
-      <Button layoutX="89.0" layoutY="381.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Add" textFill="WHITE">
-         <graphic>
-            <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../assest/icons8-add-64.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button layoutX="209.0" layoutY="436.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Clear" textFill="WHITE">
-         <graphic>
-            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../assest/icons8-clear-50.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button layoutX="88.0" layoutY="436.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Delete" textFill="WHITE">
-         <graphic>
-            <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../assest/icons8-delete-30.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button layoutX="209.0" layoutY="381.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Update" textFill="WHITE">
-         <graphic>
-            <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../assest/icons8-update-64.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <TableView fx:id="tblUser" layoutX="381.0" layoutY="109.0" prefHeight="476.0" prefWidth="549.0">
+      <Button layoutX="81.0" layoutY="411.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Add" textFill="WHITE" />
+      <Button layoutX="201.0" layoutY="466.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Clear" textFill="WHITE" />
+      <Button layoutX="80.0" layoutY="466.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Delete" textFill="WHITE" />
+      <Button layoutX="201.0" layoutY="411.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Update" textFill="WHITE" />
+      <TableView fx:id="tblUser" layoutX="364.0" layoutY="110.0" opacity="0.6" prefHeight="476.0" prefWidth="643.0">
         <columns>
           <TableColumn fx:id="colUserName" prefWidth="156.800048828125" text="User Name" />
-            <TableColumn fx:id="colUserEmail" prefWidth="233.5999755859375" text="Email" />
-            <TableColumn fx:id="colUserPassword" prefWidth="159.199951171875" text="Password" />
+            <TableColumn fx:id="colUserEmail" prefWidth="268.0" text="Email" />
+            <TableColumn fx:id="colUserPassword" prefWidth="124.79998779296875" text="Password" />
         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <effect>
+            <InnerShadow />
+         </effect>
       </TableView>
    </children>
 </AnchorPane>
