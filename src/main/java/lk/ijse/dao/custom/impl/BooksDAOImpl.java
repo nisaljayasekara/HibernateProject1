@@ -2,9 +2,7 @@ package lk.ijse.dao.custom.impl;
 
 import lk.ijse.config.SessionFactoryConfig;
 import lk.ijse.dao.custom.BooksDAO;
-import lk.ijse.entity.Admin;
 import lk.ijse.entity.Books;
-import lk.ijse.entity.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;

@@ -3,7 +3,6 @@ package lk.ijse.dao.custom.impl;
 import lk.ijse.config.SessionFactoryConfig;
 import lk.ijse.dao.custom.BranchDAO;
 import lk.ijse.entity.Branch;
-import lk.ijse.entity.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;

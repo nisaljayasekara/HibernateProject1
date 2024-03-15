@@ -1,7 +1,5 @@
 package lk.ijse.dao;
 
-import lk.ijse.entity.User;
-
 import java.sql.SQLException;
 import java.util.List;
 
