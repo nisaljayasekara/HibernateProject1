@@ -8,7 +8,7 @@
 
 <AnchorPane fx:id="root" prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: FFF1E6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.admin.AdminHomeFormController">
    <children>
-      <AnchorPane fx:id="root" layoutY="3.0" prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: white;">
+      <AnchorPane fx:id="root" layoutY="3.0" prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: #0befdc;">
          <children>
             <ImageView fitHeight="500.0" fitWidth="500.0" layoutX="27.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
                <image>
