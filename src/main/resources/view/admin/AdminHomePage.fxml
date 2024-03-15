@@ -8,7 +8,7 @@
 
 <AnchorPane fx:id="root" prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: FFF1E6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.admin.AdminHomeFormController">
    <children>
-      <AnchorPane fx:id="root" layoutY="3.0" prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: #0befdc;">
+      <AnchorPane fx:id="root" layoutY="3.0" prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: #9df9f1;">
          <children>
             <ImageView fitHeight="500.0" fitWidth="500.0" layoutX="27.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -25,6 +25,11 @@
                </font></Label>
          </children>
       </AnchorPane>
+      <ImageView fitHeight="440.0" fitWidth="398.0" layoutX="618.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assest/branches_map-removebg-preview.png" />
+         </image>
+      </ImageView>
       <ImageView fitHeight="128.0" fitWidth="124.0" layoutX="927.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../assest/icons8-admin-80.png" />

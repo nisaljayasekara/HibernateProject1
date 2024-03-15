@@ -2,7 +2,9 @@ package lk.ijse.dao.custom.impl;
 
 import lk.ijse.config.SessionFactoryConfig;
 import lk.ijse.dao.custom.BooksDAO;
+import lk.ijse.entity.Admin;
 import lk.ijse.entity.Books;
+import lk.ijse.entity.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
@@ -23,6 +25,20 @@ public class BooksDAOImpl implements BooksDAO {
         }catch (Exception e){
             transaction.rollback();
             return false;
+        }finally {
+            session.close();
+        }
+    }
+
+    @Override
+    public Books search(String id)  {
+        Session session = SessionFactoryConfig.getInstance().getSession();
+        System.out.println(id);
+        try {
+            Books books= session.get(Books.class, id);
+            return books;
+        } catch (Exception e) {
+            return null;
         }finally {
             session.close();
         }

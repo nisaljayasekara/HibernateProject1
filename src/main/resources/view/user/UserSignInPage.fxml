@@ -9,36 +9,42 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="userSignInPage" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cefcf8;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserSignInFormController">
+<AnchorPane fx:id="userSignInPage" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cefcf8;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.user.UserSignInFormController">
    <children>
-      <Text layoutX="78.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Email" wrappingWidth="84.13671875">
+      <Text fill="#0a1747" layoutX="89.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Email" wrappingWidth="84.13671875">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <Text layoutX="78.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="84.13671875">
+      <Text fill="#0a1747" layoutX="87.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="84.13671875">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Text>
-      <TextField fx:id="txtUserEmail" alignment="CENTER" layoutX="77.0" layoutY="143.0" prefHeight="30.0" prefWidth="176.0" stylesheets="@../../style/textField.css" />
-      <TextField fx:id="txtUserPassword" alignment="CENTER" layoutX="78.0" layoutY="211.0" prefHeight="30.0" prefWidth="176.0" stylesheets="@../../style/textField.css" />
-      <Button layoutX="130.0" layoutY="257.0" mnemonicParsing="false" onAction="#btnUserSignInOnAction" prefHeight="25.0" prefWidth="84.0" style="-fx-border-radius: 12;" styleClass="loginDashboard-button" stylesheets="@../../style/LoginDashboard.css" text="Sign In">
+      <TextField fx:id="txtUserEmail" alignment="CENTER" layoutX="87.0" layoutY="181.0" prefHeight="25.0" prefWidth="165.0" stylesheets="@../../style/textField.css" />
+      <TextField fx:id="txtUserPassword" alignment="CENTER" layoutX="88.0" layoutY="244.0" prefHeight="25.0" prefWidth="165.0" stylesheets="@../../style/textField.css" />
+      <Button layoutX="130.0" layoutY="295.0" mnemonicParsing="false" onAction="#btnUserSignInOnAction" prefHeight="25.0" prefWidth="84.0" style="-fx-border-radius: 12;" styleClass="loginDashboard-button" stylesheets="@../../style/LoginDashboard.css" text="Sign In">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <Text fill="#0a1747" layoutX="87.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account ?" wrappingWidth="149.0">
+      <Text fill="#0a1747" layoutX="87.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account ?" wrappingWidth="149.0">
          <font>
             <Font size="11.0" />
          </font>
       </Text>
-      <Hyperlink layoutX="203.0" layoutY="299.0" onAction="#hyperUserSignUpOnAction" text="Sign Up" textFill="#0a1747">
+      <Hyperlink layoutX="202.0" layoutY="337.0" onAction="#hyperUserSignUpOnAction" text="Sign Up" textFill="#0a1747">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Hyperlink>
-      <Button layoutX="22.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="26.0" prefWidth="17.0" styleClass="loginDashboard-button" stylesheets="@../../style/LoginDashboard.css" />
-      <ImageView fitHeight="306.0" fitWidth="301.0" layoutX="275.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+      <Button layoutX="474.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="26.0" prefWidth="94.0" styleClass="loginDashboard-button" stylesheets="@../../style/LoginDashboard.css" text="Back" />
+      <Text fill="#0a1747" layoutX="88.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="84.13671875">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUserName" alignment="CENTER" layoutX="88.0" layoutY="113.0" stylesheets="@../../style/textField.css" />
+      <ImageView fitHeight="239.0" fitWidth="291.0" layoutX="285.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../asset/360_F_53734293_rs3bkrl9n1EJZBj2CdogkmeF6W5aOhy5-removebg-preview.png" />
          </image>

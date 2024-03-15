@@ -10,65 +10,66 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="root1" prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: #6df5ea;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.SettingsFormController">
+<AnchorPane fx:id="root1" prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: #0befdc;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.user.SettingsFormController">
    <children>
-      <AnchorPane layoutX="658.0" layoutY="38.0" prefHeight="410.0" prefWidth="306.0" style="-fx-background-color: #cefcf8;">
+      <Text fill="#050608" layoutX="64.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Settings" wrappingWidth="331.13671875">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+      </Text>
+      <Button layoutX="106.0" layoutY="438.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="42.0" prefWidth="154.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Delete Account" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="704.0" layoutY="54.0" prefHeight="384.0" prefWidth="297.0" style="-fx-background-color: white;">
+         <children>
+            <Text layoutX="85.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update" wrappingWidth="148.13671875">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Text fill="#0a1747" layoutX="52.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="84.13671875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#0a1747" layoutX="52.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="84.13671875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtUserName" alignment="CENTER" layoutX="52.0" layoutY="123.0" prefHeight="30.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
+            <TextField fx:id="txtUserPassword" alignment="CENTER" layoutX="51.0" layoutY="197.0" prefHeight="30.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
+            <Button layoutX="99.0" layoutY="272.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="50.0" prefWidth="108.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Update" textFill="WHITE" />
+         </children>
          <effect>
             <InnerShadow />
          </effect>
-         <children>
-            <TextField fx:id="txtUserPassword" alignment="CENTER" layoutX="49.0" layoutY="233.0" prefHeight="30.0" prefWidth="210.0" stylesheets="@../../style/textField.css" />
-         </children>
       </AnchorPane>
-      <ImageView fitHeight="645.0" fitWidth="838.0" layoutX="131.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="468.0" fitWidth="518.0" layoutX="240.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../asset/stack-of-school-education-text-books-clip-art-59406-removebg-preview.png" />
          </image>
       </ImageView>
-      <Text layoutX="73.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Settings" wrappingWidth="401.5367431640625">
-         <font>
-            <Font name="System Bold Italic" size="46.0" />
-         </font>
-      </Text>
-      <Text layoutX="729.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update" wrappingWidth="148.13671875">
-         <font>
-            <Font name="System Bold" size="35.0" />
-         </font>
-      </Text>
-      <Text layoutX="707.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="84.13671875">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Text>
-      <Text layoutX="710.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="84.13671875">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Text>
-      <TextField fx:id="txtUserName" alignment="CENTER" layoutX="708.0" layoutY="194.0" prefHeight="30.0" prefWidth="210.0" stylesheets="@../../style/textField.css" />
-      <Button layoutX="764.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="50.0" prefWidth="105.0" style="-fx-background-color: #cefcf8;" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Update">
-         <effect>
-            <InnerShadow />
-         </effect></Button>
-      <Button layoutX="875.0" layoutY="544.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="42.0" prefWidth="154.0" style="-fx-background-color: #cefcf8;" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Delete Account">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
+      <AnchorPane layoutX="38.0" layoutY="168.0" prefHeight="218.0" prefWidth="309.0" style="-fx-background-color: white;">
          <effect>
             <InnerShadow />
          </effect>
-      </Button>
-      <Text layoutX="61.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="92.13671875">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Text>
-      <Text fill="#03050d" layoutX="61.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="105.60000000000014">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </Text>
-      <Label fx:id="lblUserName" alignment="CENTER" layoutX="61.0" layoutY="341.0" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: white;" styleClass="text-field" stylesheets="@../../style/textField.css" textAlignment="CENTER" />
-      <Label fx:id="lblUserPassword" alignment="CENTER" layoutX="61.0" layoutY="406.0" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: white;" styleClass="text-field" stylesheets="@../../style/textField.css" textAlignment="CENTER" />
+         <children>
+            <Text fill="#0a1747" layoutX="42.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Email" wrappingWidth="84.13671875">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#0a1747" layoutX="41.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="84.13671875">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Label fx:id="lblUserName" alignment="CENTER" layoutX="41.0" layoutY="53.0" prefHeight="30.0" prefWidth="214.0" style="-fx-background-color: white;" styleClass="text-field" stylesheets="@../../style/textField.css" textAlignment="CENTER" />
+            <Label fx:id="lblUserPassword" alignment="CENTER" layoutX="41.0" layoutY="118.0" prefHeight="30.0" prefWidth="214.0" style="-fx-background-color: white;" styleClass="text-field" stylesheets="@../../style/textField.css" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

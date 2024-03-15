@@ -69,4 +69,18 @@ public class BranchDAOImpl implements BranchDAO {
             session.close();
         }
     }
+
+    @Override
+    public Branch search(String id) {
+        Session session = SessionFactoryConfig.getInstance().getSession();
+
+        try {
+            Branch branch= session.get(Branch.class, id);
+            return branch;
+        } catch (Exception e) {
+            return null;
+        }finally {
+            session.close();
+        }
+    }
 }

@@ -9,4 +9,6 @@ public interface BranchDAO extends CrudDAO<Branch> {
     boolean save(Branch entity);
 
     List<Branch> getAll();
+
+    Branch search(String id);
 }

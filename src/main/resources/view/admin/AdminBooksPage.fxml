@@ -4,7 +4,6 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,12 +12,12 @@
 
 <AnchorPane prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: #0befdc;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.admin.AdminBooksFormController">
    <children>
-      <Text layoutX="384.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books Manage" wrappingWidth="295.13671875">
+      <Text layoutX="380.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books Manage" wrappingWidth="283.13671875">
          <font>
             <Font name="System Bold Italic" size="38.0" />
          </font>
       </Text>
-      <Text fill="#0a1747" layoutX="139.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id">
+      <Text fill="#0a1747" layoutX="138.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -29,10 +28,23 @@
          </font>
       </Text>
       <Button layoutX="137.0" layoutY="490.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Add" textFill="WHITE">
-         <effect>
-            <InnerShadow />
-         </effect></Button>
-      <Button layoutX="257.0" layoutY="490.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Update" textFill="WHITE" />
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8-add-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="257.0" layoutY="490.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Update" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8-update-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
       <Button layoutX="136.0" layoutY="534.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Delete" textFill="WHITE">
          <graphic>
             <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
@@ -65,17 +77,14 @@
       <TextField fx:id="txtTitle" alignment="CENTER" layoutX="135.0" layoutY="248.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
       <TextField fx:id="txtAuthor" alignment="CENTER" layoutX="136.0" layoutY="313.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
       <TextField fx:id="txtGenre" alignment="CENTER" layoutX="136.0" layoutY="376.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
-      <TableView fx:id="tblBooks" layoutX="431.0" layoutY="147.0" opacity="0.63" prefHeight="458.0" prefWidth="637.0">
+      <TableView fx:id="tblBooks" layoutX="400.0" layoutY="124.0" prefHeight="476.0" prefWidth="654.0">
          <columns>
             <TableColumn fx:id="colBookId" text="Book Id" />
-            <TableColumn fx:id="colTitle" prefWidth="127.20001220703125" text="Title" />
-            <TableColumn fx:id="colAuthor" prefWidth="154.4000244140625" text="Author" />
-            <TableColumn fx:id="colGenre" prefWidth="127.20001220703125" text="Genre" />
-            <TableColumn fx:id="colStatus" prefWidth="149.60009765625" text="Status" />
+            <TableColumn fx:id="colTitle" prefWidth="120.0" text="Title" />
+            <TableColumn fx:id="colAuthor" prefWidth="150.0" text="Author" />
+            <TableColumn fx:id="colGenre" prefWidth="120.0" text="Genre" />
+            <TableColumn fx:id="colStatus" prefWidth="120.0" text="Status" />
          </columns>
-         <effect>
-            <InnerShadow />
-         </effect>
       </TableView>
       <Text fill="#0a1747" layoutX="139.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
          <font>

@@ -5,31 +5,37 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: #0befdc;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.admin.AdminRecordsFormController">
+<AnchorPane prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: #9df9f1;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.admin.AdminRecordsFormController">
    <children>
-      <Text layoutX="401.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Records Manage" wrappingWidth="312.33673095703125">
+      <ImageView fitHeight="634.0" fitWidth="1086.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assest/UsersForm.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="81.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Records Manage" wrappingWidth="301.13671875">
          <font>
             <Font name="System Bold Italic" size="38.0" />
          </font>
       </Text>
-      <Text layoutX="125.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Id">
+      <Text fill="#0a1747" layoutX="129.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Id">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
-      <TextField fx:id="txtBookId" alignment="CENTER" layoutX="126.0" layoutY="229.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
-      <Text layoutX="126.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Email">
+      <TextField fx:id="txtBookId" alignment="CENTER" layoutX="128.0" layoutY="247.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
+      <Text fill="#0a1747" layoutX="128.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Email">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
-      <TextField fx:id="txtUserEmail" alignment="CENTER" layoutX="128.0" layoutY="303.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
-      <Text layoutX="127.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date">
+      <TextField fx:id="txtUserEmail" alignment="CENTER" layoutX="128.0" layoutY="321.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
+      <Text fill="#0a1747" layoutX="128.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -39,21 +45,34 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
-      <Button layoutX="123.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Add" textFill="WHITE" />
-      <Button layoutX="123.0" layoutY="544.0" mnemonicParsing="false" onAction="#btndeleteOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Delete" textFill="WHITE" />
-      <Button layoutX="123.0" layoutY="500.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Clear" textFill="WHITE" />
-      <TableView fx:id="tblRecords" layoutX="404.0" layoutY="120.0" opacity="0.6" prefHeight="476.0" prefWidth="580.0">
+      <Button layoutX="165.0" layoutY="471.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Add" textFill="WHITE" />
+      <Button layoutX="165.0" layoutY="516.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Clear" textFill="WHITE" />
+      <TableView fx:id="tblRecords" layoutX="401.0" layoutY="128.0" opacity="0.59" prefHeight="476.0" prefWidth="657.0">
          <columns>
-            <TableColumn prefWidth="100.0" text="Transaction Id" />
+            <TableColumn fx:id="colTransactionId" prefWidth="100.0" text="Transaction Id" />
             <TableColumn fx:id="colBookId" prefWidth="120.0" text="Book Id" />
-            <TableColumn fx:id="colUserName" prefWidth="120.0" text="User Email" />
+            <TableColumn fx:id="colUserName" prefWidth="150.0" text="User Email" />
             <TableColumn fx:id="colReturnDate" prefWidth="120.0" text="Return Date" />
-            <TableColumn prefWidth="120.0" text="Date &amp; Time" />
+            <TableColumn fx:id="colDateTime" prefWidth="160.0" text="Date &amp; Time" />
          </columns>
-         <effect>
-            <InnerShadow />
-         </effect>
       </TableView>
-      <DatePicker fx:id="txtReturnDate" layoutX="128.0" layoutY="378.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
+      <ImageView fitHeight="27.0" fitWidth="20.0" layoutX="134.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assest/icons8-bookstore-32.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="20.0" layoutX="133.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assest/icons8-id-48.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="txtReturnDate" layoutX="125.0" layoutY="396.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
+      <TextField fx:id="txtTransactionId" alignment="CENTER" layoutX="704.0" layoutY="71.0" prefHeight="25.0" prefWidth="214.0" stylesheets="@../../style/textField.css" />
+      <Button layoutX="951.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="4.0" prefWidth="98.0" styleClass="Crud-button" stylesheets="@../../style/CrudButtons.css" text="Delete" textFill="WHITE" />
+      <Text fill="#0a1747" layoutX="552.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

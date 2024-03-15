@@ -1,4 +1,4 @@
-package lk.ijse.controller;
+package lk.ijse.controller.user;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -21,6 +21,9 @@ public class UserDashboardFormController {
     private Label lblUserName;
 
     @FXML
+    private Label lblUserNameHeading;
+
+    @FXML
     private Label lblUserPassword;
 
     @FXML
@@ -41,9 +44,10 @@ public class UserDashboardFormController {
         TimeNow();
         Date();
     }
-    public void setUserCredentials(String userName, String password) {
+    public void setUserCredentials(String userName, String password , String name ) {
         lblUserName.setText("" + userName);
         lblUserPassword.setText("" + password);
+        lblUserNameHeading.setText(""+ name);
     }
     @FXML
     void btnBooksOnAction(ActionEvent event) throws IOException {

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: #cefcf8;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserHomeFormController">
+<AnchorPane prefHeight="634.0" prefWidth="1086.0" style="-fx-background-color: #cefcf8;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.user.UserHomeFormController">
    <children>
       <Label fx:id="time" layoutX="453.0" layoutY="27.0" prefHeight="70.0" prefWidth="301.0" textFill="#0a1747">
          <font>
@@ -19,26 +20,33 @@
             <Font size="32.0" />
          </font>
       </Label>
-      <Text layoutX="756.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Text>
-      <Text layoutX="757.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Text>
-      <Label fx:id="lblUserName" alignment="CENTER" layoutX="756.0" layoutY="267.0" prefHeight="24.0" prefWidth="191.0" styleClass="text-field" stylesheets="@../../style/textField.css" textFill="#0a1747">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
-      <Label fx:id="lblUserPassword" alignment="CENTER" layoutX="755.0" layoutY="335.0" prefHeight="24.0" prefWidth="191.0" styleClass="text-field" stylesheets="@../../style/textField.css" textFill="#0a1747" />
-      <ImageView fitHeight="149.0" fitWidth="202.0" layoutX="752.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="313.0" fitWidth="476.0" layoutX="241.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../asset/illustration-businessman_53876-5856.png" />
+            <Image url="@../../asset/360_F_53734293_rs3bkrl9n1EJZBj2CdogkmeF6W5aOhy5-removebg-preview.png" />
          </image>
       </ImageView>
+      <AnchorPane layoutX="736.0" layoutY="198.0" prefHeight="243.0" prefWidth="276.0" style="-fx-background-color: white;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <Text fill="#0a1747" layoutX="96.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Email">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#0a1747" layoutX="101.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="lblUserName" alignment="CENTER" layoutX="51.0" layoutY="81.0" prefHeight="24.0" prefWidth="180.0" styleClass="text-field" stylesheets="@../../style/textField.css" textFill="#0a1747">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUserPassword" alignment="CENTER" layoutX="50.0" layoutY="149.0" prefHeight="24.0" prefWidth="180.0" styleClass="text-field" stylesheets="@../../style/textField.css" textFill="#0a1747" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
